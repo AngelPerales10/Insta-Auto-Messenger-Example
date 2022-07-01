@@ -7,8 +7,6 @@ import pyautogui
 # moving to upper left hand will stop macro incase anything goes wrong
 pyautogui.FAILSAFE = True
 
-# - PROXY , - INFO , & MESSAGE to ctrl f and find to replace if needed
-
 # Note: Delays and pauses spread out over time due to potential
 # macro mistakes and limits of sending 40 messages per hour
 
@@ -17,6 +15,26 @@ pyautogui.FAILSAFE = True
 times_you_want_to_loop = 4
 
 loop = 0
+
+user1 = 'username1'
+user2 = 'username2'
+user3 = 'username3'
+user4 = 'username4'
+
+pwd1 = 'password1'
+pwd2 = 'password2'
+pwd3 = 'password3'
+pwd4 = 'password4'
+
+proxy1 = '123.456.789.01'
+proxy2 = '123.456.789.02'
+proxy3 = '123.456.789.03'
+proxy4 = '123.456.789.04'
+
+message1 = 'This is a test message'
+message2 = 'This is a 2nd test message'
+message3 = 'This is a 3rd test message'
+message4 = 'This is a 3rd test message'
 
 while loop != times_you_want_to_loop:
 
@@ -37,7 +55,7 @@ while loop != times_you_want_to_loop:
     pyautogui.press('backspace')
 
     # PROXY - adding proxy
-    pyautogui.typewrite('123.456.789.00')
+    pyautogui.typewrite(proxy1)
 
     # click on chrome
     pyautogui.PAUSE = 2.5
@@ -51,7 +69,7 @@ while loop != times_you_want_to_loop:
     pyautogui.PAUSE = 2.5
     pyautogui.hotkey('ctrl', 'a')
     time.sleep(1)
-    pyautogui.typewrite('Username1')
+    pyautogui.typewrite(user1)
 
     # INFO - click on old password
     pyautogui.PAUSE = 2.5
@@ -61,7 +79,7 @@ while loop != times_you_want_to_loop:
     pyautogui.PAUSE = 2.5
     pyautogui.hotkey('ctrl', 'a')
     time.sleep(1)
-    pyautogui.typewrite('password1')
+    pyautogui.typewrite(pwd1)
 
     # log in
     pyautogui.PAUSE = 2.5
@@ -110,7 +128,7 @@ while loop != times_you_want_to_loop:
 
     # MESSAGE - type out message and send
     pyautogui.PAUSE = 2.5
-    pyautogui.typewrite('Example message #1', interval=0.2)
+    pyautogui.typewrite(message1, interval=0.2)
     pyautogui.press('tab')
     time.sleep(1)
     pyautogui.press('enter')
@@ -140,7 +158,7 @@ while loop != times_you_want_to_loop:
     pyautogui.press('backspace')
 
     # PROXY - adding proxy
-    pyautogui.typewrite('001.234.567.89')
+    pyautogui.typewrite(proxy2)
 
     # click on chrome
     pyautogui.PAUSE = 2.5
@@ -154,7 +172,7 @@ while loop != times_you_want_to_loop:
     pyautogui.PAUSE = 2.5
     pyautogui.hotkey('ctrl', 'a')
     time.sleep(1)
-    pyautogui.typewrite('Username2')
+    pyautogui.typewrite(user2)
 
     # INFO - click on old password
     pyautogui.PAUSE = 2.5
@@ -164,7 +182,7 @@ while loop != times_you_want_to_loop:
     pyautogui.PAUSE = 2.5
     pyautogui.hotkey('ctrl', 'a')
     time.sleep(1)
-    pyautogui.typewrite('password2')
+    pyautogui.typewrite(pwd2)
 
     # log in
     pyautogui.PAUSE = 2.5
@@ -213,7 +231,7 @@ while loop != times_you_want_to_loop:
 
     # MESSAGE - type out message and send
     pyautogui.PAUSE = 2.5
-    pyautogui.typewrite('Example message #2', interval=0.2)
+    pyautogui.typewrite(message2, interval=0.2)
     pyautogui.press('tab')
     time.sleep(1)
     pyautogui.press('enter')
@@ -243,7 +261,7 @@ while loop != times_you_want_to_loop:
     pyautogui.press('backspace')
 
     # PROXY - adding proxy
-    pyautogui.typewrite('987.654.321.00')
+    pyautogui.typewrite(proxy3)
 
     # click on chrome
     pyautogui.PAUSE = 2.5
@@ -257,7 +275,7 @@ while loop != times_you_want_to_loop:
     pyautogui.PAUSE = 2.5
     pyautogui.hotkey('ctrl', 'a')
     time.sleep(1)
-    pyautogui.typewrite('Username3')
+    pyautogui.typewrite(user3)
 
     # INFO - click on old password
     pyautogui.PAUSE = 2.5
@@ -267,7 +285,7 @@ while loop != times_you_want_to_loop:
     pyautogui.PAUSE = 2.5
     pyautogui.hotkey('ctrl', 'a')
     time.sleep(1)
-    pyautogui.typewrite('password3')
+    pyautogui.typewrite(pwd3)
 
     # log in
     pyautogui.PAUSE = 2.5
@@ -316,7 +334,7 @@ while loop != times_you_want_to_loop:
 
     # MESSAGE - type out message and send
     pyautogui.PAUSE = 2.5
-    pyautogui.typewrite('Example message #3', interval=0.2)
+    pyautogui.typewrite(message3, interval=0.2)
     pyautogui.press('tab')
     time.sleep(1)
     pyautogui.press('enter')
@@ -346,7 +364,7 @@ while loop != times_you_want_to_loop:
     pyautogui.press('backspace')
 
     # PROXY - adding proxy
-    pyautogui.typewrite('456.789.001.23')
+    pyautogui.typewrite(proxy4)
 
     # click on chrome
     pyautogui.PAUSE = 2.5
@@ -360,7 +378,7 @@ while loop != times_you_want_to_loop:
     pyautogui.PAUSE = 2.5
     pyautogui.hotkey('ctrl', 'a')
     time.sleep(1)
-    pyautogui.typewrite('Username4')
+    pyautogui.typewrite(user4)
 
     # INFO - click on old password
     pyautogui.PAUSE = 2.5
@@ -370,7 +388,7 @@ while loop != times_you_want_to_loop:
     pyautogui.PAUSE = 2.5
     pyautogui.hotkey('ctrl', 'a')
     time.sleep(1)
-    pyautogui.typewrite('password4')
+    pyautogui.typewrite(pwd4)
 
     # log in
     pyautogui.PAUSE = 2.5
@@ -419,7 +437,7 @@ while loop != times_you_want_to_loop:
 
     # MESSAGE - type out message and send
     pyautogui.PAUSE = 2.5
-    pyautogui.typewrite('Example message #4', interval=0.2)
+    pyautogui.typewrite(message4, interval=0.2)
     pyautogui.press('tab')
     time.sleep(1)
     pyautogui.press('enter')
