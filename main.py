@@ -34,7 +34,7 @@ proxy4 = '123.456.789.04'
 message1 = 'This is a test message'
 message2 = 'This is a 2nd test message'
 message3 = 'This is a 3rd test message'
-message4 = 'This is a 3rd test message'
+message4 = 'This is a 4th test message'
 
 while loop != times_you_want_to_loop:
 
