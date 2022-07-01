@@ -6,4 +6,4 @@ as it is very much outdated and not the official version I created before (delet
 
 This is demonstrated with split windows.
 On the left half would be settings, and chrome.
-On the right half would be Notepad++ with the list of usernames to send messages to
+On the right half would be Notepad++ with the list of usernames to send messages to.
