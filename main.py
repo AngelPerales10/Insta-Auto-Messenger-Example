@@ -36,7 +36,7 @@ message2 = 'This is a 2nd test message'
 message3 = 'This is a 3rd test message'
 message4 = 'This is a 4th test message'
 
-while loop != times_you_want_to_loop:
+while loop < times_you_want_to_loop:
 
     # CYCLE 1 ----------------------------------------
 
